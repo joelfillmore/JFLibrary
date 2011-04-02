@@ -1,7 +1,6 @@
 A collection of utilities by Joel Fillmore
 
  - TimeSpanSemaphore
-   Limits concurrent callers during the specified timespan. Useful for rate
-   limiting web API calls. Additional details:
-   http://joelfillmore.com/2011/04/01/throttling-web-api-calls/
+   Limits concurrent callers during the specified timespan. Useful for rate limiting web API calls.
+   Details: http://joelfillmore.com/2011/04/01/throttling-web-api-calls/
  
