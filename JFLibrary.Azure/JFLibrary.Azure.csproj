@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8CE1C528-895D-4BFC-83F8-AD6C8EC0DDB1}</ProjectGuid>
+    <ProjectGuid>{E1D05325-CFFA-4A61-8543-82C090A27908}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JFLibrary</RootNamespace>
-    <AssemblyName>JFLibrary</AssemblyName>
+    <RootNamespace>JFLibrary.Azure</RootNamespace>
+    <AssemblyName>JFLibrary.Azure</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CloudBlobUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TimeSpanSemaphore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

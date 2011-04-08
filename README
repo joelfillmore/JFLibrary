@@ -1,6 +1,9 @@
-A collection of utilities by Joel Fillmore
-
+JFLibrary
  - TimeSpanSemaphore
    Limits concurrent callers during the specified timespan. Useful for rate limiting web API calls.
    Details: http://joelfillmore.com/2011/04/01/throttling-web-api-calls/
- 
+   
+JFLibrary.Azure
+ - CloudBlobUtility
+   Create gzip copies of css and js files. Set content-type and cache-control headers. Blob exension methods
+   Details: http://joelfillmore.com/2011/04/08/serving-gzip-compressed-content-from-the-azure-cdn/
