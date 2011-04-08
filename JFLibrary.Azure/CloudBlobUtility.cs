@@ -9,7 +9,7 @@ using System.IO.Compression;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace FilterPlay.Utilities
+namespace JFLibrary.Azure
 {
     public static class CloudBlobUtility
     {
