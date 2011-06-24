@@ -1,9 +1,12 @@
 JFLibrary
+ - DateSpan
+   Calculate the difference between two dates in years, months and days. 
+   Details: http://joelfillmore.com/years-and-months-between-dates/
  - TimeSpanSemaphore
    Limits concurrent callers during the specified timespan. Useful for rate limiting web API calls.
-   Details: http://joelfillmore.com/2011/04/01/throttling-web-api-calls/
+   Details: http://joelfillmore.com/throttling-web-api-calls/
    
 JFLibrary.Azure
  - CloudBlobUtility
    Create gzip copies of css and js files. Set content-type and cache-control headers. Blob exension methods
-   Details: http://joelfillmore.com/2011/04/08/serving-gzip-compressed-content-from-the-azure-cdn/
+   Details: http://joelfillmore.com/serving-gzip-compressed-content-from-the-azure-cdn/
