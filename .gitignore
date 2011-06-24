@@ -9,3 +9,5 @@ _Resharper.*
 *~
 *.swp
 *.Cache
+*.sln.docstates
+TestResults
