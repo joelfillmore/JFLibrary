@@ -5,9 +5,9 @@ using System.Text;
 using Microsoft.WindowsAzure.StorageClient;
 using Microsoft.WindowsAzure;
 using System.IO;
-using System.IO.Compression;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Ionic.Zlib;
 
 namespace JFLibrary.Azure
 {
@@ -99,7 +99,8 @@ namespace JFLibrary.Azure
                 using (MemoryStream memoryStream = new MemoryStream())
                 {
                     // push the original blob into the gzip stream
-                    using (GZipStream gzipStream = new GZipStream(memoryStream, CompressionMode.Compress))
+                    using (GZipStream gzipStream = new GZipStream(
+                        memoryStream, CompressionMode.Compress, CompressionLevel.BestCompression))
                     using (BlobStream blobStream = blob.OpenRead())
                     {
                         blobStream.CopyTo(gzipStream);
